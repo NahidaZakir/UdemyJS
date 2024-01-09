@@ -56,11 +56,11 @@ greet('Nahida', 'Zakir');
 // argument is the value passed to the function
 
 // default value of variable in js is undefined
-function square(number){
-    return number * number;
-}
+// function square(number){
+//     return number * number;
+// }
 
-console.log(square(15));
+// console.log(square(15));
 // function types:
 // 1. Performing a Taask
 // 2. Calculating a value
