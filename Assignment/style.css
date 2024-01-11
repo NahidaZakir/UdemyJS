@@ -1,0 +1,56 @@
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.circle{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hour{
+    width:40%;
+    height: 2px;
+    background-color:blue;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    animation-name: clockhand;
+    animation-duration: 360s;
+    transform-origin: top left;
+}
+
+.minute{
+    width:47%;
+    height: 2px;
+    background-color:red;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    animation-name: clockhand;
+    animation-duration: 60s;
+    transform-origin: top left;
+}
+@keyframes clockhand {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
