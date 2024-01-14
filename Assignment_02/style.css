@@ -43,23 +43,20 @@ h1{
     opacity: 0.5;
     z-index: 100;
 }
-.loader-1{
+.progress-wrapper{
     height: 10px;
     width: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    
+    background-color: yellow;
+    margin-bottom: 30px;
 }
-.loader-2{
+.progress{
     height: 10px;
     width: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    animation: loading 10s;
+    background-color: red;
+    margin:1px;
+    animation: loading 5s 1 linear;
 }
 @keyframes loading {
-    0%   {background-color: red;}
-    25%  {background-color: red;}
-    50%  {background-color: red;}
-    100% {background-color: red;}
+    0%   {width: 0%;}
+    100%{width: 100%;}
   }
